@@ -1,0 +1,281 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.fm{
+  margin: 100px auto;
+}
+.fm{
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  width: 680px;
+  height: 400px;
+  border-radius: 8px;
+}
+nav{
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  text-align:center;
+  background:rgb(1,164,160);
+  height:74px;
+  position: relative;
+
+}
+.loop-btn{
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+.vol-btn{
+  position: absolute;
+  margin-top: 32px;
+  right: 48px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.vol-bar{
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.vol-bar span{
+   display: block;
+   height: 6px;
+   width: 20px;
+   border-radius:1px;
+   margin: 2px 0;
+   background-color: #91bdb4;
+}
+
+.vol-bar span.active,
+.vol-bar span.active ~ span{
+   background-color: #ced9d3;
+}
+
+
+/*频道*/
+.middle{
+  position: relative;
+  width:680px;
+  height: 60px;
+  background-color: rgb(54,57,54);
+  color:#ccc;
+}
+.middle span{
+  font-weight:bold;
+  cursor:pointer;
+  line-height: 2;
+}
+.middle span.active{
+  color: #fff;
+}
+.middle #channel{
+  height: 60px;
+  overflow: hidden;
+  width: 630px;
+  position: relative;
+  margin: 0 25px;
+
+}
+#channel ul.channels{
+  /*width: 8400px;*/
+  position: absolute;
+  height: 60px;
+
+  left: -210px;
+}
+
+.channels{
+  text-align:center;
+
+}
+.channels >li{
+    float: left;
+    width: 210px;
+    text-align:center;
+    cursor:pointer;
+    font-weight:bold;
+    font-size: 24px;
+    line-height: 2.5;
+    color: #fff;
+
+}
+.channels li:hover{
+  color: #e8edea;
+}
+.left{
+  width: 25px;
+  padding-left: 10px;
+   float:left;
+  font-size:30px;
+   color: #e8edea;
+   cursor: pointer;
+}
+
+.right{
+  width: 25px;
+  font-size:30px;
+  padding-right: 10px;
+  float:right;
+  color: #e8edea;
+  cursor: pointer;
+}
+
+.right:hover{
+  opacity:0.8;
+}
+.left:hover{
+  opacity:0.8;
+}
+
+
+
+
+
+
+/*音乐*/
+#music{
+  width: 680px;
+  padding: 32px 24px;
+  height: 260px;
+}
+.cover{
+  float:left;
+  height:170px;
+
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.information{
+    margin-left: 220px;
+}
+.detail{
+  position:relative;
+}
+
+.singer{
+  text-align:left;
+  font-size: 18px;
+  color: #7f8281;
+  font-weight: bold;
+
+}
+
+.title{
+  line-height:30px;
+  text-align:left;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+.time{
+  position: absolute;
+  right: 0;
+  top: 28px;
+  font-weight: bold;
+  color: #91bdb4;
+}
+
+.progress-bar{
+  position: relative;
+  margin-top: 50px;
+  height: 6px;
+  background-color: #ced9d3;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 100%;
+  overflow: hidden;
+}
+.progress{
+  position: absolute;
+  width: 0%;
+  height: 6px;
+  background-color: #91bdb4;
+  left: 0px;
+
+}
+
+.buttons{
+    height: 50px;
+    margin-top: 40px;
+    /*border: 1px solid red;*/
+}
+.buttons span{
+  font-size: 32px;
+}
+.buttons span:hover{
+  opacity:0.6;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.heart{
+    color:#CDC1C5;
+    cursor: pointer;
+
+
+}
+.heart.active{
+  color:red;
+
+}
+.play-btn{
+
+    font-size: 32px;
+    color: #3f413f;
+    cursor: pointer;
+  }
+
+  .next{
+    font-size: 32px;
+    color: #3f413f;
+    cursor: pointer;
+}
+
+.lrcs{
+  margin-top: 80px;
+}
+.lrcs li.active{
+  display: block;
+}
+.lrcs li{
+  text-align:center;
+  font-weight: bold;
+  color: #91bdb4;
+  font-size: 18px;
+  display:none;
+}
